@@ -3,11 +3,12 @@
         ["env", {"modules": false}],
         ["react"]
     ],
+    "plugins": [
+      "transform-flow-comments"
+    ],
     "env": {
       "test": {
-        "plugins": [["styled-components", { "ssr": true, "displayName": true, "preprocess": false }]],
-        "presets": [["env"], "react"]
+        "plugins": [["styled-components", { "ssr": true, "displayName": true, "preprocess": false }], "transform-flow-comments"],
       }
     }
-    
 }
